@@ -1,0 +1,264 @@
+* {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+header {
+    position: fixed;
+    width: 100%;
+    /* min-width: 1703px;*/
+    display: flex;
+    /*****/
+    justify-content: center;
+    /******/
+}
+
+
+
+btn#btn-submit-form{
+    margin-left: 80px;
+    margin-right: 2px;
+    margin-top: 10px;
+    height: 50px;
+    width: 500px;
+    background: plum;
+    border-style: none;
+    border-radius: 10px;
+    color: black;
+}
+
+
+#btn-registrar{
+    margin-left: 80px;
+    margin-right: 2px;
+    margin-top: 10px;
+    height: 50px;
+    width: 500px;
+    background:yellow;
+    border-style: none;
+    border-radius: 10px;
+    color: black;
+
+}
+
+
+
+main{
+
+    margin-top: 40px;
+    background-color: bisque;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.contenedor-1{
+    background-color: turquoise;
+    border-top: 50%;
+    text-align: center;
+}
+
+.contenedor-2{
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.banner {
+    background-color: turquoise;
+    position: fixed;
+    /*Me saca el elemento y me lo fija en un solo punto sobre el body (no respeta contenedor padre)*/
+    top: 0px;
+    /*Me pone esta seccion hasta arriba para que no interfiera también se puede boner hasta abajo con bottom 0px*/
+    position: relative;
+    margin: 0 auto;
+    /*Toma de manera automatica el espacio que queda se expande*/
+    width: 1500px;
+    height: auto;
+    /* height: 40px;*/
+    border-radius: 2em;
+    margin-top: 30px;
+    /* max-width: 850px;*/
+}
+.main-navigation {
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 120%;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    list-style-type: none;
+    z-index: 0;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.main-navigation li:first-child {
+
+    margin-top: 0px;
+    margin-left: 5%;
+    font-family: jokerman;
+}
+
+
+.logo {
+    position: 70%;
+    /*position: absolute;*/
+    color: yellow;
+    display: flex;
+    align-items: center;
+}
+
+
+/*NUEVO*/
+label {
+    margin-left: 10px;
+    margin-right: 2px;
+    margin-top: 10px;
+    height: 50px;
+    width: 500px;
+    background:turquoise;
+    border-style: none;
+    border-radius: 10px;
+    color: black;
+  /*  text-shadow: black 0px 2px 5px;
+    box-shadow: black 0px 2px 5px;*/
+    
+}
+
+
+
+
+
+ul a {
+    color: white;
+    text-decoration: none;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+/*
+button{
+    margin-left: 80px;
+    margin-right: 2px;
+    margin-top: 10px;
+    height: 50px;
+    width: 500px;
+    background:turquoise;
+    border-style: none;
+    border-radius: 10px;
+    color: black;
+
+}
+*/
+
+
+@media screen and (min-width: 896px) and (max-width: 1596px){
+
+    .main-navigation li:first-child{
+
+        padding-bottom: 10px;
+      /*  margin-top: 5px;*/
+        margin-left: 170px;
+       /* position: absolute;*/
+
+    }
+
+ul li a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+
+}
+
+
+
+@media screen and (max-width: 895px){
+    body{
+        background-color:antiquewhite;
+    
+    }
+
+.main-navigation li:first-child{
+    padding-bottom: 10px;
+    /*  margin-top: 5px;*/
+    margin-left: 170px;                   
+    /* position: absolute;*/   
+
+    
+    }
+
+
+    .main-navigation{
+        display: flex;
+     /*   display: block;*/
+    /*    color: white;
+        text-decoration: none;*/
+        flex-direction: column;
+
+    
+    }
+
+}
+
+@media screen and (max-width: 689px){
+
+
+    .main-navigation li:first-child{
+
+        padding-bottom: 10px;
+      /*  margin-top: 5px;*/
+        margin-left: 250px;
+       /* position: absolute;*/   
+    
+    }
+
+
+    .main-navigation li a{
+        display: block;
+    }
+
+
+}
+
+.btn{
+    background-color: teal;
+    width: 200px;
+ /*   border: red, 1px;*/
+    border-radius: 7px;
+    cursor: pointer;
+    
+}
+
+/*
+.btn2{
+    background-color: gainsboro;
+    color: aliceblue;
+    margin-left: 10px;
+}
+*/
+
+.btn:hover {
+    background-color: orange;
+    
+}
+
+.btn:focus {
+    outline: none;
+}
+
+
+
+
+
+
